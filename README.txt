@@ -29,4 +29,4 @@ SilverStripe\Omnipay\GatewayInfo:
         Password: qD2wzQ_hrc!8
         shopId: 3D
 
-Will need to adapt the getTransactionType/SetTransactionType in Purchase/Refund Request and supply it with either "purchase" for CC or "debit" for the other 3
+Needs to adapt the getTransactionType/SetTransactionType in Purchase/Refund Request and supply it with either "purchase" for CC or "debit" for the other 3
