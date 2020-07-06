@@ -1,4 +1,4 @@
-Quick and Dirty Implementation for Omnipay wirecard
+Quick and very dirty implementation for Omnipay wirecard (does not work OTB)
 Supports Wirecard CreditCard, EPS,Giropay and Sofortbanking
 Function implemented purchase (works live), refund (works with TestCredentials)
 
@@ -28,3 +28,5 @@ SilverStripe\Omnipay\GatewayInfo:
         UserName: 70000-APITEST-AP
         Password: qD2wzQ_hrc!8
         shopId: 3D
+
+Will need to adapt the getTransactionType/SetTransactionType in Purchase/Refund Request and supply it with either "purchase" for CC or "debit" for the other 3
