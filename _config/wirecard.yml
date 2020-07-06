@@ -1,0 +1,15 @@
+---
+Name: InnoWireCard
+---
+SilverStripe\Omnipay\Model\Message\PaymentMessage:
+  extensions:
+    - Omnipay\Wirecard\Message\Payment\Page\PaymentMessageExtension
+SilverStripe\Omnipay\Service\RefundService:
+  extensions:
+    - Omnipay\Wirecard\Message\Payment\Page\RefundServiceExtension
+SilverStripe\Omnipay\Model\Payment:
+  extensions:
+    - Omnipay\Wirecard\Message\Payment\Page\PaymentExtension
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Omnipay\Service\PurchaseService:
+    class: PurchaseServiceFix
