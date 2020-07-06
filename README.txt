@@ -30,3 +30,6 @@ SilverStripe\Omnipay\GatewayInfo:
         shopId: 3D
 
 Needs to adapt the getTransactionType/SetTransactionType in Purchase/Refund Request and supply it with either "purchase" for CC or "debit" for the other 3
+
+For more Test credentials visit https://doc.wirecard.com
+
